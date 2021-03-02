@@ -1,0 +1,12 @@
+python3 run_bert_hs.min.py \
+  --task_name hsp \
+  --do_lower_case \
+  --train_dataset founta \
+  --test_dataset founta \
+  --do_eval \
+  --bert_model bert-base-uncased \
+  --max_seq_length 128 \
+  --train_batch_size 32 \
+  --learning_rate 2e-5 \
+  --num_train_epochs 3.0 \
+  --output_dir ./bert-baseline/founta/results/bert-base-reg
